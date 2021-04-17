@@ -16,12 +16,28 @@ const todos = [
   },
 ];
 
-// for (let i = 0; i <= 10; i++) {
-//   console.log(`For Loop Number: ${i}`);
+// for (let i = 0; i < todos.length; i++) {
+//   console.log(todos[i].text);
 // }
 
-let i = 0;
-while (i <= 10) {
-  console.log(`While Loop Number: ${i}`);
-  i++;
-}
+// for (let todo of todos) {
+//   console.log(todo.text);
+// }
+
+// for (let d of todos) {
+//     console.log(d);
+//   }
+
+// todos.forEach(function (a) {
+//   console.log(a.text);
+// });
+
+const todoCompleted = todos
+  .filter(function (todo) {
+    return todo.isCompleted === true;
+  })
+  .map(function (todo) {
+    return todo.text;
+  });
+
+console.log(todoCompleted);
