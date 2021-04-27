@@ -1,9 +1,3 @@
-// console.log(document.getElementById("my-form"));
+const items = document.querySelectorAll(".item");
 
-// console.log(document.querySelector("h1"));
-
-// console.log(document.querySelectorAll(".item"));
-
-// console.log(document.getElementsByClassName("item"));
-
-console.log(document.getElementsByTagName("li"));
+items.forEach((item) => console.log(item));
